@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- To do: MAKE BIGGER
+    
+      add search function between table and searchbar
+      change colors to reflect current website?-->
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>replit</title>
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="title">
+<h1>Clay County Museum Land History</h1>
+<h3>Team Mando Prototype </h3>
+</div>
+
+  <div class="row">
+<div class='breathing'> </div> <!-- Breathing room -->
+  <div class="col-info"> <!--Left Column-->
+    <fieldset>
+      
+     <legend>Name Search</legend>
+      <p>
+          <label>Name Search:</label>
+          <input type = "Text" 
+                 id = "name"
+                 value = "" /> 
+        <button>Search</button>
+      </p>
+    </fieldset>
+    
+    <br>
+    <fieldset>
+     <legend>Landowner Information</legend>
+      <p>
+          <table>
+  <tr>
+    <th>Name</th>
+    <th>Land Section</th>
+    <th>Owned Plot</th>
+  </tr>
+  <tr>
+    <td rowspan="2" >Placehol Dername</td>
+    <td>Mulbury</td>
+    <td>12</td>
+  </tr>
+  <tr>
+    <td>Mockington</td>
+    <td>14 15 16</td>
+  </tr>
+          </table>
+      </p>
+     <!-- <button>Clear Results</button> -->
+    </fieldset>
+</div>
+     <br>
+    
+    <div class="col-map"> <!--Right Column-->
+       <fieldset id='Map'>
+     <legend>Map</legend>
+      <script src="Map.js"></script>
+          
+    </fieldset>
+      </div>
+
+      <div class='breathing'> </div> <!-- Breathing room -->
+  </div>  
+
+
+  <!--<script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>  -->
+</body>
+
+<div class='footer'>
+  <p>Ⓒ2022 Gamers Incorportated Limited</p>
+</div>
+
+  
+</html>

@@ -1,0 +1,129 @@
+/* This is a single-line comment */
+
+html, body {
+  position:relative; right:3.8px; /* This is a stupid fix but some reason everything is slightly off to the right and I cant find out why so were doing this*/
+  background-image: linear-gradient(180deg, white, #ede9e4);
+  background-repeat: repeat-x;
+    background-color: #ede9e4;
+  height: 100%;
+  width: 100%;
+}
+
+/*MAKE BIG = true*/ 
+
+.row {
+  display: flex;
+   margin: auto;
+  padding: 40px 0px 0px 0px; /* adds brething room between title and elements */
+  width: 90%; /* allows background to show better - might change */
+  /*background-color: rgba(80, 80, 80, 1);;*/
+  /*background-color: grey; */
+}
+.col-info {
+  flex: 50%;
+   margin: 0 50px; /*Adds space between left column and right column (map)*/
+}
+.col-map {
+  flex: 80%;
+  
+}
+.breathing {
+  flex: 0%;
+  /* background-color: lightblue; */
+}
+.title {
+  margin: auto;
+  max-width: 1000px;
+  text-align: center;
+ border: 2px solid black; 
+        background-color: white;
+       font-weight: bold;
+         font-size: 16px;
+}
+.footer { 
+  margin-top: 250px;
+ min-height:100px; 
+  background:white;
+   border-top: 2px solid black;
+  text-align: center;
+  font-weight: bold;
+}
+
+legend {border: 2px solid black; 
+        background-color: whitesmoke;
+       font-weight: bold;
+        font-size: 30px; }
+fieldset{border: 2px solid black; 
+         background-color: white;
+        font-size: 20px;}
+input {
+  width: 70%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+table{
+  font-size: 25px;
+   margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Javascript Map */
+.Clay { margin:1em auto; border-collapse:collapse }
+.Clay td {
+    cursor:pointer;
+    width:60px; height:60px;
+    border:3px solid black;
+    text-align:center;
+    font-family:sans-serif; font-size:15px
+}
+.Clay td.clicked {
+    background-color:#576377;
+    font-weight:bold; color:white;
+}  
+
+
+
+/* Mobile View */
+@media screen and (max-width: 790px) { 
+  .row {
+  display: block; /* Might rework - is read completely differently compared to the desktop view and might hurt site dev later on - should work for prototype though */
+  /* background-color: grey; */
+    margin: auto;
+ width: 80%; /* (allows background to show better - might change) */ 
+  }
+    
+
+  [class*="col-"] { /* resizes everything beginning with col- */
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+    font-size: 20px;
+}
+    .title {
+    text-align: center;
+   border: 2px solid black; 
+         background-color: white;
+          font-weight: bold;
+         font-size: 19px;
+}
+  legend { text-align: left;
+    border: 2px solid black; 
+        background-color: whitesmoke;
+       font-weight: bold;
+        font-size: 30px; }
+fieldset{border: 2px solid black; 
+         background-color: white;}
+
+table{
+  font-size: 25px;
+   margin-left: auto;
+    margin-right: auto;
+}
+}
+
