@@ -7,7 +7,7 @@ if ($db->connect_error) {
 
 //Checks to make sure that the name field is filled, then changes the sql statement
 if (!empty($_GET['name'])){
-  $sql = "SELECT * FROM `rcclr2` WHERE LastNameGrantor_1 = ? OR LastNameGrantor_2 = ?  OR LastNameGrantor_3 = ? OR LastNameGrantee_1 = ? OR LastNameGrantee_2 = ?";
+  $sql = "SELECT * FROM `rcclr2` WHERE Last_Name_Grantor_1 = ? OR Last_Name_Grantor_2 = ?  OR Last_Name_Grantor_3 = ? OR Last_Name_Grantee_1 = ? OR Last_Name_Grantee_2 = ?";
 } else {
   echo "The name field is required.";
   $db->close();

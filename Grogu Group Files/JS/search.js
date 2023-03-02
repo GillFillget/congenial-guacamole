@@ -54,8 +54,17 @@ function editTable(response) { //Adds rows of data from the given array results
         var tsp = row.insertCell(3);
         var rge = row.insertCell(4);
         var date = row.insertCell(5);
-        gntr.innerHTML = response[i].FirstNameGrantor_1 + " " + response[i].LastNameGrantor_1;
-        gnte.innerHTML = response[i].FirstNameGrantee_1 + " " + response[i].LastNameGrantee_1;
+        if(response[i].First_Name_Grantor_1 == null){
+            gntr.innerHTML = response[i].Last_Name_Grantor_1;
+        }else{
+            gntr.innerHTML = response[i].First_Name_Grantor_1 + " " + response[i].Last_Name_Grantor_1;
+        }
+        if(response[i].First_Name_Grantee_1 == null){
+            gnte.innerHTML = response[i].Last_Name_Grantee_1;
+            console.log("it happened")
+        }else{
+            gnte.innerHTML = response[i].First_Name_Grantee_1 + " " + response[i].Last_Name_Grantee_1;
+        }
         sec.innerHTML = response[i].SEC;
         tsp.innerHTML = response[i].TSP;
         rge.innerHTML = response[i].RGE;
