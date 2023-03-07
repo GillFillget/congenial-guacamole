@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+.App {
+  text-align: center;
+}
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-image: url("Photos/SunflowerHeader.jpg");
+}
+
+.navbar .links {
+  margin-left: auto;
+  font-size: 25px;
+  background-color: rgb(165,204,208);
+}
+.navbar a {
+  text-decoration: none;
+  padding: 10px 30px;
+  color: #4b4b4b;
+  font-size: 18px;
+  font-family: Arial;
+}
+.navbar a:hover {
+  color: whitesmoke;
+  background-color: #4b4b4b;
+  transition-duration: 0.5s;
+}
+
+.links{
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.content {
+  padding: 50px;
+}
+
+
+
+body{
+  background-image: url("./Photos/backgroundcc.jpg");
+  background-size: cover;
+}
+
+.social-container {
+  padding: 15px 15px;
+  position: fixed;
+  top: 25%;
+  color: #4b4b4b;
+}
+
+a.social {
+  margin: 1rem 1rem;
+  transition: transform 250ms;
+  display: block;
+}
+
+a.social:hover {
+  transform: translateY(-3px);
+}
+
+a.facebook {
+  color: #4968ad;
+}
+
+.not-found{
+  color: #4b4b4b;
+}
+
+.map{
+  max-height: 1200px;
+}
+
+.footer{
+  margin-bottom: 20px;
+}
+.footer p {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0px;
+}
