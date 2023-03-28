@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Range Slider</title>
+    <style>
+        .container {
+            width: 350px;
+            margin: 50px;
+        }
+        .slider-container {
+            width: 400px;
+            max-width: 450px;
+            margin: 0 ;
+        }
+
+    </style>
+    <link rel="stylesheet" href="css/rSlider.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="slider-container">
+            <input type="text" id="slider" class="slider" />
+        </div>
+    
+    <script src="js/rSlider.min.js"></script>
+    <script>
+        (function () {
+            'use strict';
+
+
+            var init = function () {                
+
+                var slider = new rSlider({
+                    target: '#slider',
+                    values: [1900,1910,1920,1930,1940,1950,1960,1970,1980,1990,2000,2010,2020],
+                    range: true,
+                    set: [1930, 1960],
+                    onChange: function (vals) {
+                        console.log(vals);
+                    }
+                });
+            };
+            window.onload = init;
+        })();
+    </script>
+    </div>
+</body>
+</html>
