@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+ul,li,a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.mainBanner{
+    position: relative;
+    overflow:hidden;
+    width:100%;
+}
+
+.navigation{
+    display: flex;
+    position: fixed;
+    z-index: 500;
+}
+
+#info {
+    display: none;
+}
+
+#humb{
+    display: none;
+    position: fixed;
+    top: 10rem;
+    right: 5%;
+    width: 25px;
+}
+  
+.modaal-container{
+    max-width: 80%;
+    background: none;
+    box-shadow: none;
+}
+  
+.modaal-close:after, 
+.modaal-close:before{
+    background:#ccc;  
+}
+  
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before{
+    background:#666;
+}
+  
+.p-globalNav_menuList a {
+    color: #fff;
+}
+  
+.p-globalNav_menuList li {
+    padding: 5px;
+}
+  
+.p-globalNav_snsList {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#p-facebook {
+    padding: 10px;
+}
+
+@media only screen and (max-width:899px){
+
+#humb {
+    display: block;
+}
+.p-modalPop {
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    display: none;
+    overflow: auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    color: #fff;
+    background: rgba(36, 36, 48, 0.75)
+}
+      
+.p-modalPop__inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    margin: auto;
+    padding: 4rem 0
+}
+      
+.p-modalPop .l-inner {
+    z-index: 1
+}
+      
+.p-modalPop__close {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 1.6rem;
+    height: 1.6rem;
+    margin: 4rem 0 0 4rem;
+    cursor: pointer;
+    text-indent: -9999px
+}
+}
