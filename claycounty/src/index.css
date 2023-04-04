@@ -45,16 +45,13 @@
   padding: 50px;
 }
 
-
-
 body{
-  background-image: url("./Photos/backgroundcc.jpg");
-  background-size: cover;
+  background-color: aliceblue;
 }
 
 .social-container {
-  padding: 15px 15px;
-  position: fixed;
+  padding-left: 150px;
+  float: left;
   top: 25%;
   color: #4b4b4b;
 }
@@ -79,6 +76,7 @@ a.facebook {
 
 .map{
   max-height: 1200px;
+  border-style: solid;
 }
 
 .footer{
@@ -88,4 +86,5 @@ a.facebook {
   font-weight: bold;
   font-size: 18px;
   margin: 0px;
+  color: #4b4b4b;
 }
