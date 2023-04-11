@@ -25,6 +25,15 @@ form {
   font-size: .7em;
 }
 
+.rs-container {
+  width: 350px;
+  margin: 50px;
+}
+.slider-container {
+  width: 400px;
+  max-width: 450px;
+  margin: 0 ;
+}
 
 * {
   box-sizing: border-box;

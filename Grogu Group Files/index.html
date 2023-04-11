@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width">
   <title>Clay County Land Records</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="CSS/rSlider.min.css">
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> <!--Jquery-->
 
@@ -43,8 +44,31 @@
   
     <div class="row">
     <div class="col-md-7 search"> 
-      
     <form method="get" action="" id="foo" class="text-center">
+
+      <div class="rs-container">
+        <div class="slider-container">
+            <input type="text" id="slider" class="slider" />
+        </div>
+          <script src="js/rSlider.min.js"></script>
+          <script>
+            (function () {
+                'use strict';
+                var init = function () {                
+                    var slider = new rSlider({
+                        target: '#slider',
+                        values: [1900,1920,1940,1960,1980,2000],
+                        range: true,
+                        set: [1930, 1960],
+                        onChange: function (vals) {
+                            console.log(vals);
+                        }
+                    });
+                };
+                window.onload = init;
+            })();
+          </script>
+        </div>
       Search for records given a last name.<br>
       <input type="text" name="name" placeholder="Last Name" required>
       <button><img src="img/search.png" width="40px"></i></button>
