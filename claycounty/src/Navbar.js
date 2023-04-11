@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import logo from "./Photos/Logo2.webp"
-//import { Navbar, Nav, Container } from 'react-bootstrap';
 
 const Navigation = () => {
     return ( 
