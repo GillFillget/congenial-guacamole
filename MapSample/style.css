@@ -1,0 +1,55 @@
+#mapDivide{
+    display: block;
+}
+
+table, th {
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+	display: inline-block;
+	background-color: aqua;
+	cellspacing: 0;
+}
+
+td { 
+	padding: 0;}
+
+#mapDivide img {
+    width: 10vw;
+    z-index: 1;
+}
+
+#borderLine {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+}
+
+#bLine {
+    width: 40vw;
+    opacity: 0.5;
+}
+
+#map th {
+    position: relative;
+}
+
+#map th::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transition: background-color 0.5s;
+}
+
+#map th:hover::before {
+    background-color: rgba(0,0,0, 0.4);
+}
+
+#bigMap img {
+    width: 40vw;
+}
