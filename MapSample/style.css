@@ -7,9 +7,8 @@ table, th {
     border-collapse: collapse;
     margin: 0;
     padding: 0;
+    margin-bottom: -7.5px;
 	display: inline-block;
-	background-color: aqua;
-	cellspacing: 0;
 }
 
 td { 
