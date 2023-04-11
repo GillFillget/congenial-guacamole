@@ -10,6 +10,11 @@
   font-family: "Quicksand";
 }
 .navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.navb {
   padding: 20px;
   display: flex;
   align-items: center;
@@ -20,12 +25,13 @@
 .navbar .links {
   margin-left: auto;
   font-size: 25px;
-  background-color: rgb(165,204,208);
+  background-color: rgb(165, 204, 228);
+  padding: auto;
 }
 .navbar a {
   text-decoration: none;
   padding: 10px 30px;
-  color: #4b4b4b;
+  color: #1b1b1b;
   font-size: 18px;
   font-family: Arial;
 }
@@ -43,6 +49,11 @@
 
 .content {
   padding: 50px;
+}
+
+.navbar .home {
+color: whitesmoke;
+background-color: #4b4b4b;
 }
 
 body{
@@ -81,6 +92,8 @@ a.facebook {
 
 .footer{
   margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .footer p {
   font-weight: bold;
