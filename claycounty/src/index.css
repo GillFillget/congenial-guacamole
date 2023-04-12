@@ -61,16 +61,11 @@ body{
 }
 
 .social-container {
-  padding-left: 150px;
-  float: left;
-  top: 25%;
   color: #4b4b4b;
 }
 
 a.social {
-  margin: 1rem 1rem;
   transition: transform 250ms;
-  display: block;
 }
 
 a.social:hover {
@@ -90,12 +85,14 @@ a.facebook {
   border-style: solid;
 }
 
-.footer{
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 30px;
+  max-width: 800px;
 }
-.footer p {
+.footer-container p {
   font-weight: bold;
   font-size: 18px;
   margin: 0px;
