@@ -1,0 +1,106 @@
+#mapDivide{
+    display: block;
+}
+
+table, th {
+	display: inline-block;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+	margin-bottom: -7.5px;
+}
+
+#mapDivide img {
+    width: 10vw;
+    z-index: 1;
+}
+
+#borderLine {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+}
+
+#bLine {
+    width: 40vw;
+    opacity: 0.5;
+}
+
+#topo th {
+    position: relative;
+}
+
+#topo th::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 6.3px);
+    z-index: 2;
+    transition: background-color 0.5s;
+}
+
+#topo th:hover::before {
+    background-color: rgba(0,0,0, 0.4);
+}
+
+#bigMap {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 40vw;
+}
+
+#bigMap div{
+    position: relative;
+    width: 40vw;
+}
+
+#bigMap img {
+    width: 40vw;
+    height: 100%;
+}
+
+.mapSection {
+    display: flex;
+    position: absolute;
+    width: 45vw;
+    top: 0;
+    left: 0;
+}
+
+.mapSection th{
+    display: inline-block;
+    position: relative;
+    width:calc(40vw/6);
+    height:calc(40vw/6);
+    color: rgba(0,0,0, 0.7);
+    text-align: center;
+    vertical-align: middle;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+}
+
+.mapSection th::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    transition: background-color 0.5s;
+}
+
+.mapSection th:hover::before{
+    background-color: rgba(0,0,0, 0.4);
+}
+
+.mapSection a {
+    vertical-align: middle;
+    top: 10rem;
+}
