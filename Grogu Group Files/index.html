@@ -14,7 +14,7 @@
 
   <!--fontawesome stylesheet-->
     <script src="https://kit.fontawesome.com/9703492d18.js" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-qjZLwYYZNMJh+sZO5XT5sw5zE+R7XlGflvlVRh7VHPeB+uFqVZdW38pg8CDvYRL6ckPf2XBNyHr8r6v0Vo0SOg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <!--share button stylesheet-->
 <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=638e3d93b92caa0012f80c27&product=inline-share-buttons' async='async'></script>
   
@@ -24,13 +24,30 @@
   <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0" nonce="2siY0Bk5"></script>
   <!---header--->
-  <img src="img/nav.png" alt="Header and Navbar" title="Header and Navbar" width="100%">
+  <header>
+   <div class="navb">
+     <a href="/"><img src='IMG/logo.jpg' alt="Clay County Kansas Historical Society Logo" class="mainLogo"/></a>
+   </div>     
+      <nav class="links">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="https://www.claycomuseum.com/events">Events</a></li>
+        <li><a href="https://www.claycomuseum.com/timeline">County History</a></li>
+        <li><a href="https://www.claycomuseum.com/genealogy-and-research">What Do We Offer</a></li>
+        <li><a href="https://www.claycomuseum.com/staff">About</a></li>
+        <li><a href="https://www.claycomuseum.com/contact">Contact</a></li>
+        <li><a href="https://www.claycomuseum.com/volunteer">Volunteer</a></li>
+        <li><a href="https://www.claycomuseum.com/donate">Donate</a></li>
+       </ul>
+      </nav>
+  </header>
   
-  
+  <!--- Body --->
   <div class="container">
   <div class="row">
   <div class="col-md-12">
-    <h1>Land Ownership Records</h1>
+    <h1 class="blue">Land Ownership Records</h1>
+    <hr>
  <p>Search by family name or by clicking sections of the map. Information about the land will appear after search.</p>
   </div> <!---end col--->
   </div> <!---end row--->
@@ -48,7 +65,6 @@
       Search for records given a last name.<br>
       <input type="text" name="name" placeholder="Last Name" required>
       <button><img src="img/search.png" width="40px"></i></button>
-
     </form>
   
 
@@ -89,36 +105,38 @@
 </table>
       </div>
     </div> <!--end col-->
-  
+  </div> <!---end container--->
+
     <!-- Map -->
-    <div class="col-md-5">
+    <div>
       <div class="imageDisplay">
         <canvas id="canvas_front" height="960" width="713" class="highlightMap"></canvas>
       </div>
     </div> <!---end col---->
+    <hr>
   </div> <!---end row---->
-  </div> <!---end container--->
 
 
-
-  
-  <!-- Basic Share Links -->
-<div class="sharethis-inline-share-buttons"></div>
 
   <!----footer--->
-  <div class="container footer text-center">
-    <div class="row">
-      <div class="col-md-12">
-        <p>Hours: Tues - Sun. 1-5 pm
-        <br>
-          (785) 632-3786
-          <br>
-          ccmuseum@twinvalley.net
-        </p>
-        <a href="https://www.facebook.com/ccksmuseum" target="_blank"><img src="img/facebook.jpg"></a>
-      </div>
+  <div class="footer-container">
+    <div class="social-container">
+      <h3><u>Social Media</u></h3>
+      <a href="https://www.facebook.com/ccksmuseum/" className="facebook social"><i class="fab fa-facebook fa-2x"></i></a>
+      </div>  
+
+    <div>
+        <p>Hours: Tues - Sun. 1-5 pm</p>
+        <p>(785) 632-3786 </p>
+        <p>ccmuseum@twinvalley.net</p>
     </div>
-  </div>
+
+    <div>
+        <p>Our Address:</p>
+        <p>518 Lincoln Ave</p>
+        <p>Clay Center, KS 67432</p>
+    </div>
+    </div>
   
 
   

@@ -1,8 +1,5 @@
 html, body {
-  font-size: 1.4em;
-  background-image: url('img/backgroundcc.jpg');
-  background-attachment: fixed;
-  background-repeat:  repeat;
+  text-align: center;
 }
 .container {
   margin-top: 80px;
@@ -10,33 +7,23 @@ html, body {
 h1, p {
   text-align: center;
 }
-p {
-  font-size: 1.4em;
-}
+
 form {
-  float: left!;
+  text-align: center;
   font-size: 1.2em;
 }
 
 .sharethis-inline-share-buttons {
   padding: 10px
 }
-.footer {
-  font-size: .7em;
-}
 
 
 * {
   box-sizing: border-box;
+  font-family: "Quicksand";
+  margin: 0;
 }
 
-body {
-  font: 16px Arial;  
-}
-
-.imageDisplay{
-  padding-bottom: 100%
-}
 
 /*the container must be positioned relative:*/
 .autocomplete {
@@ -73,3 +60,153 @@ body {
   background-color: DodgerBlue !important; 
   color: #ffffff; 
 }
+
+
+/* Navbar */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-image: url(IMG/header.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.logo img {
+  max-width: 100%;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  font-size: 25px;
+  background-color: rgb(165, 204, 228);
+  padding: auto;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #1b1b1b;
+  font-size: 18px;
+  font-family: Arial;
+}
+
+nav a:hover {
+  color: whitesmoke;
+  background-color: #4b4b4b;
+  transition-duration: 0.5s;
+}
+
+.menu-toggle {
+  display: none;
+  position: relative;
+  z-index: 1;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background-color: #fff;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+.blue{
+  color: darkblue;
+}
+
+/* Social */
+.social-container {
+  color: #4b4b4b;
+}
+
+a.social {
+  transition: transform 250ms;
+}
+
+a.social:hover {
+  transform: translateY(-3px);
+}
+
+a.facebook {
+  color: #4968ad;
+}
+
+
+
+/* Footer */
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 30px;
+  max-width: 800px;
+}
+.footer-container p {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0px;
+  color: #4b4b4b;
+}
+
+
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  nav li {
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+  }
+  
+  .menu-toggle {
+    display: block;
+  }
+  
+  .menu-toggle span {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .menu-toggle span:first-child {
+    transform-origin: top left;
+  }
+  
+  .menu-toggle span:last-child {
+    transform-origin: bottom left;
+  }
+  
+  .menu-toggle.active span:first-child {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .menu-toggle.active span:last-child {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  nav.active {
+    display: block;
+  }
+}
+
