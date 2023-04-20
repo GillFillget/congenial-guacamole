@@ -5,8 +5,65 @@
         <meta charset="utf-8">
         <link href="CSS/oldReact.css" rel="stylesheet" type="text/css">
         <title>Clay County Interactive Map</title>
+         
+        <!--Jquery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> 
     </head>
     <body>
+
+        <!---Results Table-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-7 search">
+
+                    <!---Search--> 
+                    <form method="get" action="" id="foo" class="text-center">
+                        <input type="text" name="name" placeholder="Last Name" required>
+                        <button><img src="img/search.png" width="40px"></i></button>
+                    </form>
+  
+                    <!---displayed information after search-->
+                    <div class="table-responsive">
+
+                        <table class="table table-striped " id="resultsTable">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Grantor</th>
+                                    <th scope="col">Grantee</th>
+                                    <th scope="col">Section</th>
+                                    <th scope="col">TSP</th>
+                                    <th scope="col">Range</th>
+                                    <th scope="col">Year</th>
+                                </tr>
+                            </thead>
         
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div> <!--end col-->
+            </div> <!---end row---->
+        </div> <!---end container--->
+
+        <!---Javascript-->
+        <script src="JS/search.js"></script>
+        <script src="JS/filterSort.js"></script>
     </body>
 </html>
