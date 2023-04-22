@@ -1,0 +1,154 @@
+.nav-box {
+    display: none;
+    position: absolute;
+    top: 5vw;
+    right: 30px;
+    height: 13vw;
+    width: 13vw;
+    z-index: 10000;
+}
+
+.c-nav-btn {
+    position: absolute;
+    height: 5vw;
+    width: 5vw;
+    margin-top: 6vw;
+    margin-left: 2.3vw;
+    margin-right: 2.3vw;
+    background: none;
+    border: none;
+    transition: transform 0.3s;
+  }
+  .c-nav-btn::after, .c-nav-btn::before {
+    position: absolute;
+    top: 0;
+    content: "";
+    width: 7vw;
+    height: 0.5vw;
+    display: block;
+    background: #000;
+    border-radius: 2px;
+    transition: transform 0.3s;
+  }
+
+  .c-nav-btn::before {
+    transform: translateY(-2.5vw);
+    box-shadow: 0 2.5vw 0 #000;
+  }
+
+  .c-nav-btn::after {
+    transform: translateY(2.5vw);
+  }
+
+  .c-nav-btn.is-active::before {
+    transform: rotate(-45deg);
+    box-shadow: none;
+  }
+
+  .c-nav-btn.is-active::after {
+    transform: rotate(45deg);
+  }
+
+  .nav-box.is-active{
+    background-color: #fff;
+  }
+
+  body.is-active{
+    background-color: rgba(255, 255, 255, 0.3)
+  }
+
+  .menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    transform: translateX(100vw);
+    transition: all .3s linear;
+  }
+
+  .menuList{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  .menuList li{
+    position: relative;
+    padding-bottom: 7vw;
+  }
+
+  .menuList a{
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-size: 5vw;
+  }
+
+  .menu__item{
+    width: 100%;
+    height: auto;
+    padding: .5em 1em;
+    text-align: center;
+    color: #fff;
+    box-sizing: border-box;
+  }
+
+  .menu.is-active{
+    transform: translateX(0);
+  }
+
+  .accordion-content {
+    display: none;
+    font-size: 3vw;
+    padding-left: 3vw;
+    transition-duration: 0.3s;
+  }
+
+  .accordion-content p {
+    font-size: 3vw;
+    color: #fff;
+  }
+
+  .accordion-title {
+    position: relative;
+  }
+
+  .accordion-title::after {
+    border-right: solid 2px #fff;
+    border-top: solid 2px #fff;
+    content: "";
+    display: block;
+    height: 8px;
+    position: absolute;
+    right: -30px;
+    top: 3vw;
+    transform: rotate(135deg);
+    transition: transform .3s ease-in-out, top .3s ease-in-out;
+    width: 8px;
+  }
+
+  .accordion-title.open::after {
+    top: 45%;
+    transform: rotate(-45deg);
+  }
+
+  .accordion-content.open{
+    display: block;
+  }
+
+  .menuList li.open{
+    padding-bottom: 0;
+  }
+
+  @media screen and (max-width: 899px){
+  .nav-box{
+    display: block;
+  }
+  }
